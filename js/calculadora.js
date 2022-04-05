@@ -28,8 +28,4 @@ function bhaskara(a, b, c){
     return {x1, x2}
 }
 
-// instalar pacote http: npm i http-server
-// npm run start
-//nao é possível importar diretamente para o arquivo onde tem o export
-//criar arquivo para fazer a bhaskara e nesse arquivo de baskhara importar a calculadora.js
 export { soma, sub, multi, divi, bhaskara }

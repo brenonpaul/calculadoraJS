@@ -24,6 +24,10 @@ it('Equacao incompleta', ()=>{
     expect(bhaskara(3,0,-12)).toMatchObject({"x1": 2, "x2": -2})
 })
 
+it('Equacao com resultado decimal', ()=>{
+    expect(bhaskara(32,55,5)).toMatchObject({"x1": -0.09630528455782628, "x2": -1.6224447154421737})
+})
+
 it('Equacao sem resposta', ()=>{
     expect(bhaskara(7,5,5)).toMatchObject({"x1": NaN, "x2": NaN})
 })
